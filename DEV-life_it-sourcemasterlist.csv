@@ -1,0 +1,442 @@
+file_pattern (S),column_datatype (S),data_source (S),dummy_column (S),file_delimiter (S),file_extension (S),file_header (BOOL),file_type (S),frequency (S),partition_column (S),s3_bucket (S),tenant (M),validation_logic (S),zip (BOOL),filter_on (S),validation_file_pattern (S)
+AGNEXT,"CCTRL:DELETE| SEL_VALDATE:Integer| SEL_CO:String| SEL_POLNO:String| SEL_BILLFREQ:String| SEL_BILLMETHOD:String| SEL_FREQ:Integer| SEL_MODE:String| SEL_PRM_WAIVER:String| SEL_SOURCE:String| SEL_SPECOND:String| W_NEW_PDTO_DATE:integer| SEL_ISSDSt:String| SEL_DISt:String| SEL_AGCY:String| SEL_AGT_NUM:String| SEL_STATE:String| SEL_ZIP:String| SEL_RTBK:String| SEL_PLAN:String| SEL_RECTYPE:String| SEL_STATUS:String| SEL_SUBTYPE:String| SEL_ISSDATE:Integer| SEL_ISSAGE:Integer| SEL_VALPLAN:String| SEL_PRODUCT_CLASS:String| W_CVG:string| SEL_CLASS:String| SEL_GENDER:String| SEL_NEW_LOB:String| SEL_OLD_LOB:String| SEL_SUBSTANDARD:String| SEL_SNG_PRM:String| SEL_COV_TYPE:String| SEL_NFOKEY:String| SEL_FORM_NO:String| SEL_ISS_STATE:String| SEL_ANN_TYPE:String| SEL_MEDSUPP_REINS:String| SEL_FLEXTYPE:String| SEL_FLEX_SUSPENSE:String| SEL_FLEXSTATUS:String| SEL_REINS_CO:String| SEL_REINS_KIND:String| SEL_REINS_CODE:String| SEL_REINS_CEDED:decimal(10,4)| SEL_POL_CNT:Integer| SEL_RDR_CNT:Integer| SEL_UNITS:decimal(10,5)| SEL_CURRUNITVAL:decimal(10,4)| SEL_VOLUME:decimal(10,4)| SEL_MAP:decimal(10,4)| SEL_ANNPREM:decimal(10,4)| SEL_MODPREM:decimal(10,4)| SEL_TOTANN:decimal(10,4)| SEL_ANNUAL_PRM:decimal(10,4)| SEL_ANNUALIZED_PRM:decimal(10,4)| SEL_SUBLOB:String| SEL_RISK:String| SEL_FUND_VALUE:decimal(10,4)| W_ORIG_ISSDATE:string| W_ORIG_PDTO_DATe:integer| SEL_BILLCONTROL:String| SEL_AGCY_TYPE:String| SEL_BASE_RTBK:String| SEL_BASE_PLAN:String| SEL_BASE_VALPLAN:String| SEL_MOLDPLAN:String| SEL_FUND_NUMBER:Integer| SEL_FUND_TYPE:String| SEL_ISSUE_SOURCE:String| WS_CVG_UNITS:decimal(10,6)| SEL_TERM_IND:String| SEL_CHRNC_IND:String| SEL_CRIT_IND:String| SEL_LAST_PP_BILLMETH:String| SEL_LAST_PPMODE:String| SEL_ACF_CCODE:String| SEL_ISSUE_SUBSOURCE:String| SEL_MKT_PROD_NAME:String| SEL_SUSPENSE_PRM:decimal(10,3)| SEL_REGION_ABBR:String| SEL_MPRIMED:String| SEL_MSECMED:String| SEL_DEF_PREM_IND:String| SEL_TOT_DEF_PREM:decimal(10,4)| SEL_DEF_PREM_MTH_CNT:Integer| WS_DEF_PAYDTE:string| SEL_DM_ID:String| EMUS_LAPSE_DATE:string| SEL_SEGMENT_IND:String| SEL_DURATION:Integer| W_SOURCE_INDICATOR:string| SEL_NO_CNT:Integer| SEL_MFRACRULE:String| SEL_BASE_MKT_NAME:String| SEL_BASE_LOB:String| SEL_PAR_CODE:String| SEL_MDIV:String| SEL_TRUE_UP:Integer| SEL_IND_DTH_BEN:Integer| SEL_MNAGENTA:String| SEL_MNVOLA:decimal(10,4)| SEL_MCONCODEA:String| SEL_MNAGENTb:String| SEL_MNVOLB:decimal(10,4)| SEL_MCONCODEB:String| SEL_MNAGENTC:String| SEL_MNVOLC:decimal(10,4)| SEL_MCONCODEC:String| SEL_MNAGENTD:String| SEL_MNVOLD:decimal(10,4)| SEL_MCONCODED:String| W_SEL_LIEN_AMOUNT:decimal(10,4)| W_SEL_LIEN_RATE:decimal(10,6)| W_SEL_LIEN_INT_AMT:decimal(10,4)| W_SEL_LIEN_DEF_PREM:decimal(10,4)| SEL_AGENT_POL_CVR_NUM:String| W_SEL_AGENT_NUMBER_1:string| W_SEL_COMMISSION_SPLIT_1:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_1:decimal(10,4)| W_SEL_AGENT_NUMBER_2:string| W_SEL_COMMISSION_SPLIT_2:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_2:decimal(10,4)| W_SEL_AGENT_NUMBER_3:string| W_SEL_COMMISSION_SPLIT_3:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_3:decimal(10,4)| W_SEL_AGENT_NUMBER_4:string| W_SEL_COMMISSION_SPLIT_4:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_4:decimal(10,4)| W_SEL_AGENT_NUMBER_5:string| W_SEL_COMMISSION_SPLIT_5:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_5:decimal(10,4)| W_SEL_AGENT_NUMBER_6:string| W_SEL_COMMISSION_SPLIT_6:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_6:decimal(10,4)| W_SEL_AGENT_NUMBER_7:string| W_SEL_COMMISSION_SPLIT_7:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_7:decimal(10,4)| W_SEL_AGENT_NUMBER_8:string| W_SEL_COMMISSION_SPLIT_8:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_8:decimal(10,4)| W_SEL_AGENT_NUMBER_9:string| W_SEL_COMMISSION_SPLIT_9:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_9:decimal(10,4)| W_SEL_AGENT_NUMBER_10:string| W_SEL_COMMISSION_SPLIT_10:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_10:decimal(10,4)| W_SEL_DIV_ACCUM_TOT_AMT:decimal(10,4)| W_SEL_DIV_ACCUM_ACCRINT_TOT_AMT:decimal(10,4)| W_SEL_DIV_ACCR_INT_RT:decimal(10,4)| W_SEL_COUP_ACCUM_TOT_AMT:decimal(10,4)| W_SEL_COUP_ACCUM_ACCRINT_TOTAMT:decimal(10,4)| W_SEL_COUP_ACCR_INT_RT:decimal(10,4)| W_SEL_DIV_DUE_UNPAID_TOT_AMT:decimal(10,4)| W_SEL_FLEX_INTRATE6:decimal(10,4)| W_SEL_FLEX_INTRATE7:decimal(10,4)| W_SEL_FLEX_INTRATE8:decimal(10,4)| W_SEL_FLEX_TOT:decimal(10,4)| W_SEL_FLEX_AMT10:decimal(10,4)| SEL_LOAN_AMOUNT:decimal(10,4)| SEL_LOAN_INTEREST_RATE:Integer| SEL_LIVES:String| SEL_MORT:String| SEL_DISTRIBUTION:String| SEL_AGENCY_CODE_AGL:String| SEL_PENSION:String| SEL_TBLNO:String| SEL_TBLOFF:Integer| SEL_TBLANN:decimal(10,4)| SEL_FLATA:String| SEL_FLATOFFA:Integer| SEL_FLATANNA:decimal(10,4)| SEL_FLATB:String| SEL_FLATOFFB:Integer| SEL_FLATANNB:decimal(10,4)| SEL_FLATC:String| SEL_FLATOFFC:Integer| SEL_FLATANNC:decimal(10,4)| SEL_FLATD:String| SEL_FLATOFFD:Integer| SEL_FLATANND:decimal(10,4)| SEL_INSLIN:String| SEL_MDIVOPT:String| SEL_SIR_NAR:decimal(10,4)| SEL_SIR_DUR:String| SEL_MTYPE:String| SEL_MRESORS:String| SEL_MTRANSFER_FROM:string| SEL_MTRANSST_DIST:String| SEL_MTRANSDEBIT:String| W_MPRIDOB:integer| W_MSECDOB:integer| SEL_MINSURED_SSN:String:pii| SEL_MSPOUSE_SSN:String:pii| SEL_MCO_OWNER_SSN:String:pii| SEL_MSTATUTORY_COMPANY:String| SEL_MORIGINAL_COMPANY:String| SEL_MSERV_AGENT_AGL:String| SEL_MGROUP_POLICY_NUMBER:String| SEL_MORIGINAL_POLICY_NUMBER:String| W_MSECVALYR:integer| SEL_MUNITBEN:String| W_MLASTREGDAT:integer| SEL_MPLANNAME:String| SEL_MPLANSMOKER:String| SEL_MPLANPXBAND:String| SEL_MVALAGE:String| SEL_MFULLBEN:String| SEL_MINTRATE:String| SEL_MVALBAS:String| W_MNOPREM:integer| W_MCOVYRS:integer| W_MINTYRS:integer| W_MLIFESTYLE_MINPREM:decimal(10,4)| SEL_MCVCODE:String| SEL_MEIRPUCODE:String| SEL_MJOINT:String| SEL_MORIG_PLAN_CODE:String| W_MCV_1:integer| W_MCV_2:integer| W_MCV_3:integer| W_MCV_4:integer| W_MLIFESTYLE_BANK_ACC:decimal(10,4)| W_MNFEXPIRY:integer| W_MNFENDOW:decimal(10,4)| W_MJOINT_AGE1:integer| SEL_MJOINT_SEX1:String| SEL_MJOINT_STAT1:String| W_MJOINT_AGE2:integer| SEL_MJOINT_SEX2:String| SEL_MJOINT_STAT2:String| SEL_MRATEREASON:String| SEL_MFLATREASONA:String| SEL_MFLATREASONB:String| SEL_MFLATREASONC:String| SEL_MFLATREASOND:String| W_MGSP:decimal(10,4)| W_MGLP:decimal(10,4)| W_MANNMOD:decimal(10,4)| W_MSAMOD:decimal(10,4)| W_MQMOD:decimal(10,4)| W_MMOMOD:decimal(10,4)| W_MLIST_SMC_MODE_PREM:decimal(10,4)| W_MSPECMOD:decimal(10,4)| W_MEMPBEN:decimal(10,4)| W_MLASTPREMTRAN:decimal(10,4)| W_MEXDIVD:decimal(10,4)| W_MDIVINT:decimal(10,4)| W_MTOTAMT:decimal(10,4)| SEL_MSECOPT:String| W_MTOTPUA:integer| W_MPUAVAL_A:integer| W_MPUAVAL_B:integer| W_MPUAVAL_C:integer| W_MPUAVAL_D:integer| W_MCOUP_ONDEP:decimal(10,4)| W_MROP_PRIMARY_PREM_PD:decimal(10,4)| SEL_MAIOCODE:String| W_MAIOAMT:integer| SEL_MAIOANN:decimal(10,4)| SEL_MPICOD:String| W_MPIAGE:integer| W_MPIANN:integer| SEL_MPIDBOANN:decimal(10,4)| SEL_MINSNAME:String:pii| W_MACCDAYS:integer| W_MSICKDAYS:integer| SEL_MPIA_CODE:String| W_MTERMVAL_BEGIN:decimal(10,4)| W_MTERMVAL_END:decimal(10,4)| W_MWD_AMT:decimal(10,4)| W_MEXTINT_DATE:integer| W_MEXTINT_AMT:integer| W_MADMIN_CHARGE:decimal(10,4)| W_MFLEX_INT:integer| SEL_MFINSTDIST:String| SEL_MMULTI_ROLE_SSN_1:string:pii| SEL_MMULTI_ROLE_SSN_2:string:pii| SEL_MMULTI_ROLE_SSN_3:string:pii| SEL_MMULTI_ROLE_SSN_4:string:pii| SEL_MMULTI_ROLE_SSN_5:string:pii| SEL_MMULTI_ROLE_SSN_6:string:pii| SEL_MMULTI_ROLE_SSN_7:string:pii| SEL_MMULTI_ROLE_SSN_8:string:pii| SEL_MMULTI_ROLE_SSN_9:string:pii| SEL_MMULTI_ROLE_SSN_10:string:pii| SEL_MMULTI_ROLE_SSN_11:string:pii| SEL_MMULTI_ROLE_SSN_12:string:pii| SEL_MMULTI_ROLE_SSN_13:string:pii| SEL_MMULTI_ROLE_SSN_14:string:pii| SEL_MMULTI_ROLE_SSN_15:string:pii| SEL_CASH_VALUE_CURR_MO:decimal(10,4)| SEL_CASH_VALUE_NEXT_MO:decimal(10,4)| SEL_GPR_PERCENTAGE:decimal(10,4)| SEL-SUBCOV:varchar(40)| SEL-CREATOR-X-FIELD:varchar(40)",agnis,CCTRL,|,.gz,FALSE,data,daily,SEL_VALDATE:yyyyMMdd,data-lake/lz/aig/cbsc/agnis/,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}","SELECT 
+case when SEL_SEGMENT_IND IN ( 'E' , 'K' , 'L' , 'M' ,'N' , 'O' , 'P' , 'Q' ,'R' , 'T' , 'U' , 'V' ,'W' , 'B') then 'FORTITUDE' else 'AIG' END SEL_SEGMENT_IND
+,sel_valdate
+,case when sel_co in (10,19,22,25,48,52,56,72) OR sel_co < 10 OR sel_co > 72 then 'AGLA'
+      when sel_co=31   then 'AAL'
+      when sel_co=11   then 'AGL'
+      when sel_co=33   then 'OLL'
+      when sel_co in (12,32) then 'USL'
+ else 'AGLA'  end company
+,case when SEL_STATUS='2' then 'INACTIVE' else 'ACTIVE' end Status
+,sum(SEL_UNITS) as units
+,sum(W_MTERMVAL_END) as Mtermval_end 
+,sum(SEL_POL_CNT) as Policy_count  
+,sum(SEL_RDR_CNT) as Rider_count 
+,sum(SEL_NO_CNT)  as Nocount 
+FROM <#sourcetable#>
+group by 
+case when SEL_SEGMENT_IND IN ( 'E' , 'K' , 'L' , 'M' ,'N' , 'O' , 'P' , 'Q' ,'R' , 'T' , 'U' , 'V' ,'W' , 'B') then 'FORTITUDE' else 'AIG' END
+,sel_valdate
+,case when sel_co in (10,19,22,25,48,52,56,72) OR sel_co < 10 OR sel_co > 72 then 'AGLA'
+      when sel_co=31   then 'AAL'
+      when sel_co=11   then 'AGL'
+      when sel_co=33   then 'OLL'
+      when sel_co in (12,32) then 'USL'
+  else 'AGLA'    end
+,case when SEL_STATUS='2' then 'INACTIVE' else 'ACTIVE' end",FALSE,segment,
+AGNEXT_AGN_EXPANDED_FRL_SUPBEN,"SUPBEN-VALDATE,SUPBEN-COMPANY, SUPBEN-POLICY, SUPBEN-COV, SUPBEN-TYPE, SUPBEN-INHERENT,SUPBEN-MADBKEY, SUPBEN-MADBANN, SUPBEN-MADBVOL, SUPBEN-MADBCODE,SUPBEN-MADBRAT, SUPBEN-MADB-ISSDATE, SUPBEN-MADB-COMMRATE, SUPBEN-MADB2, SUPBEN-MADBANN-2, SUPBEN-MADBVOL-2, SUPBEN-MADBCODE-2, SUPBEN-MADBRAT-2,SUPBEN-MADB-ISSDATE-2, SUPBEN-MADB-COMMRATE-2, SUPBEN-MPWKEY, SUPBEN-MPWANN,SUPBEN-MPWCODE, SUPBEN-MPWRAT, SUPBEN-MPW-ISSDATE, SUPBEN-MPW-COMMRATE,SUPBEN-MPW2, SUPBEN-MPWANN-2, SUPBEN-MPWCODE-2, SUPBEN-MPWRAT-2,SUPBEN-MPW-ISSDATE-2, SUPBEN-MPW-COMMRATE-2, SUPBEN-MPICOD, SUPBEN-MPIAGE,SUPBEN-MPIANN, SUPBEN-MPISUBANN, SUPBEN-MPIDBOANN, SUPBEN-MAIOCODE,SUPBEN-MAIOAMT, SUPBEN-MAIOANN, SUPBEN-MAIO-CICODE, SUPBEN-MAIO-CICUR, SUPBEN-MAIO-CIPREV, SUPBEN-MAIO-CIDATE, SUPBEN-MSLKEY, SUPBEN-MSLANN, SUPBEN-MSLCODE, SUPBEN-MSLRAT, SUPBEN-ANNPREM, SUPBEN-VOLUME, SUPBEN-UNITS,SUPBEN-UNIT-FCTR, SUPBEN-CA-FCTR, SUPBEN-PW-FCTR, SUPBEN-INHB-UNIT-BASE, SUPBEN-INHB-UNIT-FACT, SUPBEN-INHB-UNIT-MAX, SUPBEN-INHB-VOLUME-BASE, SUPBEN-INHB-VOLUME-FACT, SUPBEN-INHB-VOLUME-MAX, SUPBEN-STATUS,SUPBEN-SPECOND, SUPBEN-SEGIND, SUPBEN-ACTUARIAL-COMPANY",supben, ,|,.gz,FALSE,data,monthly, SUPBEN-VALDATE,data-lake/lz/aig/cbsc/supben/,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}", ,FALSE,segment,
+AGNEXT_AGN_EXPANDED_FRL_SUPBEN_CTRL,"CYCLE-DATE, INSLIN, SEGINDCO, COMPANY, STATUS, SBTYPE, INHERENT_COUNT, OPTIONAL_COUNT",supben,NA,",",.TXT,TRUE,control,weekly,CYCLE-LDATE:yyyyMMdd,data-lake/lz/aig/cbsc/supben/,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}",TODO,FALSE,,AGNEXT_AGN_EXPANDED_FRL_SUPBEN
+AGNISEXTRACTCONTROLFILE,"SEL_SEGMENT_IND:string| sel_valdate:int| company:string| Status:string| units:decimal(18,4)|Mtermval_end:decimal(18,4)| Policy_count:int| Rider_count:int| Nocount:int",agnis,NA,",",.TXT,FALSE,control,weekly,SEL_VALDATE:yyyyMMdd,fortitude-non-prod-life-it-us-east-1/data-lake/lz/aig/cbsc/agnis/,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}","select SEL_SEGMENT_IND ,sel_valdate ,company ,Status ,units ,Mtermval_end ,Policy_count ,Rider_count ,Nocount from <#controlfile#>",FALSE,,AGNEXT
+BIGAGNIS,"CCTRL:DELETE| SEL_VALDATE:Integer| SEL_CO:String| SEL_POLNO:String| SEL_BILLFREQ:String| SEL_BILLMETHOD:String| SEL_FREQ:Integer| SEL_MODE:String| SEL_PRM_WAIVER:String| SEL_SOURCE:String| SEL_SPECOND:String| W_NEW_PDTO_DATE:integer| SEL_ISSDSt:String| SEL_DISt:String| SEL_AGCY:String| SEL_AGT_NUM:String| SEL_STATE:String| SEL_ZIP:String| SEL_RTBK:String| SEL_PLAN:String| SEL_RECTYPE:String| SEL_STATUS:String| SEL_SUBTYPE:String| SEL_ISSDATE:Integer| SEL_ISSAGE:Integer| SEL_VALPLAN:String| SEL_PRODUCT_CLASS:String| W_CVG:string| SEL_CLASS:String| SEL_GENDER:String| SEL_NEW_LOB:String| SEL_OLD_LOB:String| SEL_SUBSTANDARD:String| SEL_SNG_PRM:String| SEL_COV_TYPE:String| SEL_NFOKEY:String| SEL_FORM_NO:String| SEL_ISS_STATE:String| SEL_ANN_TYPE:String| SEL_MEDSUPP_REINS:String| SEL_FLEXTYPE:String| SEL_FLEX_SUSPENSE:String| SEL_FLEXSTATUS:String| SEL_REINS_CO:String| SEL_REINS_KIND:String| SEL_REINS_CODE:String| SEL_REINS_CEDED:decimal(10,4)| SEL_POL_CNT:Integer| SEL_RDR_CNT:Integer| SEL_UNITS:decimal(10,5)| SEL_CURRUNITVAL:decimal(10,4)| SEL_VOLUME:decimal(10,4)| SEL_MAP:decimal(10,4)| SEL_ANNPREM:decimal(10,4)| SEL_MODPREM:decimal(10,4)| SEL_TOTANN:decimal(10,4)| SEL_ANNUAL_PRM:decimal(10,4)| SEL_ANNUALIZED_PRM:decimal(10,4)| SEL_SUBLOB:String| SEL_RISK:String| SEL_FUND_VALUE:decimal(10,4)| W_ORIG_ISSDATE:string| W_ORIG_PDTO_DATe:integer| SEL_BILLCONTROL:String| SEL_AGCY_TYPE:String| SEL_BASE_RTBK:String| SEL_BASE_PLAN:String| SEL_BASE_VALPLAN:String| SEL_MOLDPLAN:String| SEL_FUND_NUMBER:Integer| SEL_FUND_TYPE:String| SEL_ISSUE_SOURCE:String| WS_CVG_UNITS:decimal(10,6)| SEL_TERM_IND:String| SEL_CHRNC_IND:String| SEL_CRIT_IND:String| SEL_LAST_PP_BILLMETH:String| SEL_LAST_PPMODE:String| SEL_ACF_CCODE:String| SEL_ISSUE_SUBSOURCE:String| SEL_MKT_PROD_NAME:String| SEL_SUSPENSE_PRM:decimal(10,3)| SEL_REGION_ABBR:String| SEL_MPRIMED:String| SEL_MSECMED:String| SEL_DEF_PREM_IND:String| SEL_TOT_DEF_PREM:decimal(10,4)| SEL_DEF_PREM_MTH_CNT:Integer| WS_DEF_PAYDTE:string| SEL_DM_ID:String| EMUS_LAPSE_DATE:string| SEL_SEGMENT_IND:String| SEL_DURATION:Integer| W_SOURCE_INDICATOR:string| SEL_NO_CNT:Integer| SEL_MFRACRULE:String| SEL_BASE_MKT_NAME:String| SEL_BASE_LOB:String| SEL_PAR_CODE:String| SEL_MDIV:String| SEL_TRUE_UP:Integer| SEL_IND_DTH_BEN:Integer| SEL_MNAGENTA:String| SEL_MNVOLA:decimal(10,4)| SEL_MCONCODEA:String| SEL_MNAGENTb:String| SEL_MNVOLB:decimal(10,4)| SEL_MCONCODEB:String| SEL_MNAGENTC:String| SEL_MNVOLC:decimal(10,4)| SEL_MCONCODEC:String| SEL_MNAGENTD:String| SEL_MNVOLD:decimal(10,4)| SEL_MCONCODED:String| W_SEL_LIEN_AMOUNT:decimal(10,4)| W_SEL_LIEN_RATE:decimal(10,6)| W_SEL_LIEN_INT_AMT:decimal(10,4)| W_SEL_LIEN_DEF_PREM:decimal(10,4)| SEL_AGENT_POL_CVR_NUM:String| W_SEL_AGENT_NUMBER_1:string| W_SEL_COMMISSION_SPLIT_1:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_1:decimal(10,4)| W_SEL_AGENT_NUMBER_2:string| W_SEL_COMMISSION_SPLIT_2:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_2:decimal(10,4)| W_SEL_AGENT_NUMBER_3:string| W_SEL_COMMISSION_SPLIT_3:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_3:decimal(10,4)| W_SEL_AGENT_NUMBER_4:string| W_SEL_COMMISSION_SPLIT_4:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_4:decimal(10,4)| W_SEL_AGENT_NUMBER_5:string| W_SEL_COMMISSION_SPLIT_5:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_5:decimal(10,4)| W_SEL_AGENT_NUMBER_6:string| W_SEL_COMMISSION_SPLIT_6:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_6:decimal(10,4)| W_SEL_AGENT_NUMBER_7:string| W_SEL_COMMISSION_SPLIT_7:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_7:decimal(10,4)| W_SEL_AGENT_NUMBER_8:string| W_SEL_COMMISSION_SPLIT_8:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_8:decimal(10,4)| W_SEL_AGENT_NUMBER_9:string| W_SEL_COMMISSION_SPLIT_9:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_9:decimal(10,4)| W_SEL_AGENT_NUMBER_10:string| W_SEL_COMMISSION_SPLIT_10:decimal(10,4)| W_SEL_PRODUCTION_SPLIT_10:decimal(10,4)| W_SEL_DIV_ACCUM_TOT_AMT:decimal(10,4)| W_SEL_DIV_ACCUM_ACCRINT_TOT_AMT:decimal(10,4)| W_SEL_DIV_ACCR_INT_RT:decimal(10,4)| W_SEL_COUP_ACCUM_TOT_AMT:decimal(10,4)| W_SEL_COUP_ACCUM_ACCRINT_TOTAMT:decimal(10,4)| W_SEL_COUP_ACCR_INT_RT:decimal(10,4)| W_SEL_DIV_DUE_UNPAID_TOT_AMT:decimal(10,4)| W_SEL_FLEX_INTRATE6:decimal(10,4)| W_SEL_FLEX_INTRATE7:decimal(10,4)| W_SEL_FLEX_INTRATE8:decimal(10,4)| W_SEL_FLEX_TOT:decimal(10,4)| W_SEL_FLEX_AMT10:decimal(10,4)| SEL_LOAN_AMOUNT:decimal(10,4)| SEL_LOAN_INTEREST_RATE:Integer| SEL_LIVES:String| SEL_MORT:String| SEL_DISTRIBUTION:String| SEL_AGENCY_CODE_AGL:String| SEL_PENSION:String| SEL_TBLNO:String| SEL_TBLOFF:Integer| SEL_TBLANN:decimal(10,4)| SEL_FLATA:String| SEL_FLATOFFA:Integer| SEL_FLATANNA:decimal(10,4)| SEL_FLATB:String| SEL_FLATOFFB:Integer| SEL_FLATANNB:decimal(10,4)| SEL_FLATC:String| SEL_FLATOFFC:Integer| SEL_FLATANNC:decimal(10,4)| SEL_FLATD:String| SEL_FLATOFFD:Integer| SEL_FLATANND:decimal(10,4)| SEL_INSLIN:String| SEL_MDIVOPT:String| SEL_SIR_NAR:decimal(10,4)| SEL_SIR_DUR:String| SEL_MTYPE:String| SEL_MRESORS:String| SEL_MTRANSFER_FROM:string| SEL_MTRANSST_DIST:String| SEL_MTRANSDEBIT:String| W_MPRIDOB:integer| W_MSECDOB:integer| SEL_MINSURED_SSN:String:pii| SEL_MSPOUSE_SSN:String:pii| SEL_MCO_OWNER_SSN:String:pii| SEL_MSTATUTORY_COMPANY:String| SEL_MORIGINAL_COMPANY:String| SEL_MSERV_AGENT_AGL:String| SEL_MGROUP_POLICY_NUMBER:String| SEL_MORIGINAL_POLICY_NUMBER:String| W_MSECVALYR:integer| SEL_MUNITBEN:String| W_MLASTREGDAT:integer| SEL_MPLANNAME:String| SEL_MPLANSMOKER:String| SEL_MPLANPXBAND:String| SEL_MVALAGE:String| SEL_MFULLBEN:String| SEL_MINTRATE:String| SEL_MVALBAS:String| W_MNOPREM:integer| W_MCOVYRS:integer| W_MINTYRS:integer| W_MLIFESTYLE_MINPREM:decimal(10,4)| SEL_MCVCODE:String| SEL_MEIRPUCODE:String| SEL_MJOINT:String| SEL_MORIG_PLAN_CODE:String| W_MCV_1:integer| W_MCV_2:integer| W_MCV_3:integer| W_MCV_4:integer| W_MLIFESTYLE_BANK_ACC:decimal(10,4)| W_MNFEXPIRY:integer| W_MNFENDOW:decimal(10,4)| W_MJOINT_AGE1:integer| SEL_MJOINT_SEX1:String| SEL_MJOINT_STAT1:String| W_MJOINT_AGE2:integer| SEL_MJOINT_SEX2:String| SEL_MJOINT_STAT2:String| SEL_MRATEREASON:String| SEL_MFLATREASONA:String| SEL_MFLATREASONB:String| SEL_MFLATREASONC:String| SEL_MFLATREASOND:String| W_MGSP:decimal(10,4)| W_MGLP:decimal(10,4)| W_MANNMOD:decimal(10,4)| W_MSAMOD:decimal(10,4)| W_MQMOD:decimal(10,4)| W_MMOMOD:decimal(10,4)| W_MLIST_SMC_MODE_PREM:decimal(10,4)| W_MSPECMOD:decimal(10,4)| W_MEMPBEN:decimal(10,4)| W_MLASTPREMTRAN:decimal(10,4)| W_MEXDIVD:decimal(10,4)| W_MDIVINT:decimal(10,4)| W_MTOTAMT:decimal(10,4)| SEL_MSECOPT:String| W_MTOTPUA:integer| W_MPUAVAL_A:integer| W_MPUAVAL_B:integer| W_MPUAVAL_C:integer| W_MPUAVAL_D:integer| W_MCOUP_ONDEP:decimal(10,4)| W_MROP_PRIMARY_PREM_PD:decimal(10,4)| SEL_MAIOCODE:String| W_MAIOAMT:integer| SEL_MAIOANN:decimal(10,4)| SEL_MPICOD:String| W_MPIAGE:integer| W_MPIANN:integer| SEL_MPIDBOANN:decimal(10,4)| SEL_MINSNAME:String:pii| W_MACCDAYS:integer| W_MSICKDAYS:integer| SEL_MPIA_CODE:String| W_MTERMVAL_BEGIN:decimal(10,4)| W_MTERMVAL_END:decimal(10,4)| W_MWD_AMT:decimal(10,4)| W_MEXTINT_DATE:integer| W_MEXTINT_AMT:integer| W_MADMIN_CHARGE:decimal(10,4)| W_MFLEX_INT:integer| SEL_MFINSTDIST:String| SEL_MMULTI_ROLE_SSN_1:string:pii| SEL_MMULTI_ROLE_SSN_2:string:pii| SEL_MMULTI_ROLE_SSN_3:string:pii| SEL_MMULTI_ROLE_SSN_4:string:pii| SEL_MMULTI_ROLE_SSN_5:string:pii| SEL_MMULTI_ROLE_SSN_6:string:pii| SEL_MMULTI_ROLE_SSN_7:string:pii| SEL_MMULTI_ROLE_SSN_8:string:pii| SEL_MMULTI_ROLE_SSN_9:string:pii| SEL_MMULTI_ROLE_SSN_10:string:pii| SEL_MMULTI_ROLE_SSN_11:string:pii| SEL_MMULTI_ROLE_SSN_12:string:pii| SEL_MMULTI_ROLE_SSN_13:string:pii| SEL_MMULTI_ROLE_SSN_14:string:pii| SEL_MMULTI_ROLE_SSN_15:string:pii| SEL_CASH_VALUE_CURR_MO:decimal(10,4)| SEL_CASH_VALUE_NEXT_MO:decimal(10,4)| SEL_GPR_PERCENTAGE:decimal(10,4)| SEL-SUBCOV:varchar(40)| SEL-CREATOR-X-FIELD:varchar(40)",bigagnis,CCTRL,|,.TXT,FALSE,data,weekly,SEL_VALDATE:yyyyMMdd,fortitude-non-prod-life-it-us-east-1/data-lake/lz/aig/cbsc/bigagnis/,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}","SELECT 
+case when SEL_SEGMENT_IND IN ( 'E' , 'K' , 'L' , 'M' ,'N' , 'O' , 'P' , 'Q' ,'R' , 'T' , 'U' , 'V' ,'W' , 'B') then 'FORTITUDE' else 'AIG' END SEL_SEGMENT_IND
+,sel_valdate
+,case when sel_co in (10,19,22,25,48,52,56,72) OR sel_co < 10 OR sel_co > 72 then 'AGLA'
+      when sel_co=31   then 'AAL'
+      when sel_co=11   then 'AGL'
+      when sel_co=33   then 'OLL'
+      when sel_co in (12,32) then 'USL'
+ else 'AGLA'  end company
+,case when SEL_STATUS='2' then 'INACTIVE' else 'ACTIVE' end Status
+,sum(SEL_UNITS) as units
+,sum(W_MTERMVAL_END) as Mtermval_end 
+,sum(SEL_POL_CNT) as Policy_count  
+,sum(SEL_RDR_CNT) as Rider_count 
+,sum(SEL_NO_CNT)  as Nocount 
+FROM <#sourcetable#>
+group by 
+case when SEL_SEGMENT_IND IN ( 'E' , 'K' , 'L' , 'M' ,'N' , 'O' , 'P' , 'Q' ,'R' , 'T' , 'U' , 'V' ,'W' , 'B') then 'FORTITUDE' else 'AIG' END
+,sel_valdate
+,case when sel_co in (10,19,22,25,48,52,56,72) OR sel_co < 10 OR sel_co > 72 then 'AGLA'
+      when sel_co=31   then 'AAL'
+      when sel_co=11   then 'AGL'
+      when sel_co=33   then 'OLL'
+      when sel_co in (12,32) then 'USL'
+  else 'AGLA'    end
+,case when SEL_STATUS='2' then 'INACTIVE' else 'ACTIVE' end",FALSE,segment,
+NAVIPOLICY,"
+
+
+po_pol_num:decimal(22,0)|
+po_cvg_idde:decimal(6,0)| po_group_id:varchar(3)| po_subgroup_id:varchar(2)|
+po_dept_id:varchar(2)| po_status:varchar(1)| po_pln_code:varchar(3)|
+po_state_code:varchar(2)| po_cont_state_code:varchar(2)|
+po_sales_code:varchar(2)| po_market_code:varchar(4)| po_mode:varchar(1)|
+po_age_prim:decimal(6,0)| po_age_joint:decimal(6,0)| po_cont:varchar(15)|
+po_pol_date:date| po_insured:decimal(22,0)| po_sex_prim:varchar(1)|
+po_sex_joint:varchar(1)| po_ratio:decimal(38,16)| po_pay_date:date|
+po_cash_with_appl:decimal(38,16)| po_qualified_flg:decimal(6,0)|
+po_internal_exc_amt:decimal(38,16)| po_external_exc_flg:decimal(38,16)|
+po_prcs_date:date| po_bill_date:date| po_header_id:varchar(10)|
+po_term_date:date| po_fst_date:date| po_issue_date:date|
+po_application_date:date| po_pol_cnfg:varchar(1)| po_has_cvg:decimal(6,0)|
+po_assignment_id:decimal(6,0)| po_waiver:decimal(6,0)| po_exc_flg:decimal(6,0)|
+po_tele_txn_flg:decimal(6,0)| po_pros_flg:decimal(6,0)|
+po_dividends_flg:decimal(6,0)| po_sp_cont_num:varchar(15)|
+po_orig_num:varchar(22)| po_orig_co_name:varchar(30)|
+po_acc_type_code:varchar(1)| po_application_id:varchar(10)| po_orig_date:date|
+po_tstamp:date| po_trns_date:date| po_flook_date:date| po_res_zip:varchar(5)|
+po_tx_ren_date:date| po_mat_date:date| po_dob_prim:date| po_dob_joint:date|
+po_co_id:decimal(22,0)| po_pay_stop_date:date| po_first_user_id:decimal(22,0)|
+po_first_date:date| po_last_user_id:decimal(22,0)| po_last_date:date|
+po_lapse_date:date| po_employee_cont:decimal(38,16)| po_cvg_eff_date:date|
+po_init_txn_src_id:decimal(6,0)| po_init_txn_exc_id:decimal(6,0)|
+po_init_txn_pretefra_basis:decimal(38,16)|
+po_init_txn_prejuly86_basis:decimal(38,16)|
+po_init_txn_tot_basis:decimal(38,16)| po_init_txn_pretefra_gain:decimal(38,16)|
+po_init_txn_total_gain:decimal(38,16)| po_lst_txn_num:decimal(22,0)|
+po_lst_txn_date:date| po_lst_val_date:date| po_mail_type:decimal(6,0)|
+po_free_period_date:date| po_roth_year:decimal(6,0)| po_tamra_date:date|
+po_mec_auth:decimal(6,0)| po_cal_yr_end_date:date|
+po_distrib_control_id:varchar(30)| po_batch_id:decimal(6,0)|
+po_first_pay_anniv:date| po_last_pay_date:date|
+po_guar_cash_with_appl:decimal(38,16)| po_auto_rebal_ind:decimal(6,0)|
+po_auto_rebal_strt_date:date| po_auto_rebal_mode:varchar(1)|
+po_auto_rebal_freq:decimal(6,0)| po_ext_cvg_seq_id:decimal(22,0)|
+po_ext_interface_id:decimal(22,0)| po_ext_pln_code:varchar(15)|
+po_prem_tax_state:varchar(2)| po_prem_tax_amount:decimal(38,16)|
+po_cost_basis:decimal(38,16)| po_tax_supress_ind:decimal(6,0)|
+po_distribution_code:varchar(2)| po_orig_cont_num:varchar(22)|
+po_level_ind:decimal(6,0)| po_fxd_prem_alloc:decimal(38,16)|
+po_var_prem_alloc:decimal(38,16)| po_system_source_id:varchar(10)|
+po_annuitized_ind:decimal(6,0)| po_mixed_prem_alloc:decimal(38,16)|
+po_attrib_change_date:date| po_user_id_mod_stat:decimal(22,0)|
+po_mod_stat_date:date| po_use_fund_value:decimal(6,0)|
+po_exch_pln_code:varchar(3)| po_next_contract_anniv:date|
+po_extrn_policy_num:varchar(22)| po_ipe_ind:decimal(6,0)| po_death_cont_ind:decimal(6,0)|
+po_exch_pol_num:decimal(22,0)| po_suppress_check_start:date|
+po_suppress_check_end:date| po_orig_ipe_pol_num:decimal(22,0)|
+po_joint_ind:decimal(6,0)| po_orig_pay_mode:varchar(1)|
+po_pc_only:decimal(6,0)| po_attr_chng_ind:decimal(6,0)|
+po_lead_time:decimal(6,0)| po_exch_date:date| po_lst_txn_type:decimal(6,0)|
+po_approved_status:varchar(1)| po_rated_age_prim:decimal(6,0)|
+po_extra_deaths_prim:decimal(38,16)| po_rated_age_joint:decimal(6,0)|
+po_extra_deaths_joint:decimal(38,16)| po_quote_date:date|
+po_quote_guar_period:decimal(6,0)| po_commission_rate:decimal(38,16)|
+po_pricing_date:varchar(1)| po_life_cont_acc:decimal(6,0)|
+po_hold_approval:decimal(6,0)| po_bus_lead_time_annuity:decimal(6,0)|
+po_bus_lead_time_pay_anniv:decimal(6,0)| po_group_sub_id:varchar(5)|
+po_level_mode:varchar(1)| po_level_start_fst_pmt:decimal(6,0)|
+po_level_start_month:decimal(6,0)| po_total_fe_load:decimal(38,16)|
+po_orig_level_mode:varchar(1)| po_next_cola_date:date|
+po_bus_lead_time_attrib_change:decimal(6,0)| po_hold_rel_user_id:decimal(22,0)|
+po_hold_rel_date:date| sa_status:varchar(1)| sa_lifecad_desc:varchar(15)|
+sa_status_desc:varchar(15)| sa_rider:decimal(6,0)| sa_order:decimal(6,0)|
+sa_tstamp:date| sa_pre_issue:decimal(6,0)| sa_terminated:decimal(6,0)|
+mc_mode_code:varchar(1)| mc_mode_code_desc:varchar(30)| mc_perd:decimal(6,0)|
+mc_tstamp:date| mc_life_expec_adj:decimal(38,16)| mc_mode_code_type:varchar(1)|
+mc_days:decimal(6,0)| mc_allow_level:decimal(6,0)| mc_mode_id:decimal(6,0)|
+sh_pol_num:decimal(22,0)| sh_cvg_id:decimal(6,0)| sh_header_id:decimal(6,0)|
+sh_ann_pay_opt:varchar(2)| sh_ann_opt_per:decimal(38,16)|
+sh_surv_per:decimal(38,16)| sh_cp_end_date:date| sh_life_ind:decimal(6,0)|
+sh_tstamp:date| sh_status:decimal(6,0)| sh_cp_pmts:decimal(6,0)|
+st_pol_num:decimal(22,0)| st_cvg_id:decimal(6,0)| st_stream_id:decimal(6,0)|
+st_floor_per:decimal(38,16)| st_tstamp:date| st_refund_amt:decimal(38,16)|
+st_guar_amt_annuitized:decimal(38,16)| st_use_fxd_guar_payout:decimal(6,0)|
+st_auto_rebal_ind:decimal(6,0)| st_status:decimal(6,0)|
+st_fixed_per:decimal(38,16)| st_header_id:decimal(6,0)|
+st_surv_per:decimal(38,16)| st_amt_annuitized_fix:decimal(38,16)|
+st_amt_annuitized_var:decimal(38,16)| st_split_ind:decimal(6,0)|
+st_tax_rule:decimal(6,0)| st_amt_premium_var:decimal(38,16)|
+st_amt_premium_fxd:decimal(38,16)| st_amt_premium_lvl:decimal(38,16)|
+st_cp_pmts:decimal(6,0)| st_type_inc:varchar(1)| st_dollar_inc:decimal(38,16)|
+st_percent_inc:decimal(38,16)| st_cr_initial_benefit:decimal(38,16)| st_cr_benefit_override_ind:decimal(6,0)|
+st_next_level_date:date| st_fxd_payout_amt:decimal(38,16)|
+st_bus_lead_time_level:decimal(6,0)| st_status_desc:varchar(30)|
+pl_pln_code:varchar(3)| pl_pln_type:decimal(6,0)| pl_co_id:decimal(22,0)|
+pl_user_id:decimal(22,0)| pl_guest_id:decimal(22,0)| pl_tab_id:decimal(6,0)|
+pl_form:varchar(20)| pl_joint_code:decimal(6,0)| pl_perds:decimal(6,0)|
+pl_timing_code:decimal(6,0)| pl_age_lst_code:decimal(6,0)|
+pl_substd_timing:decimal(6,0)| pl_substd_cap_code:decimal(6,0)|
+pl_substd_cap_age:decimal(6,0)| pl_substd_cap_year:decimal(6,0)|
+pl_prd_group:varchar(2)| pl_lock_status:decimal(6,0)| pl_prd_desc:varchar(50)|
+pl_filing:decimal(6,0)| pl_ownership:decimal(6,0)| pl_ofr:decimal(6,0)|
+pl_pln_status:decimal(6,0)| pl_mis_code1:varchar(15)| pl_mis_code2:varchar(15)|
+pl_cvg:decimal(6,0)| pl_qual_id:decimal(6,0)| pl_use_sub_ratng_id:decimal(6,0)|
+pl_use_coi_adj_id:decimal(6,0)| pl_use_grp_prcs_id:decimal(6,0)|
+pl_nxt_cont:decimal(22,0)| pl_tstamp:date| pl_approval_id:decimal(22,0)|
+pl_force_flook_div:decimal(6,0)| pl_pol_age_select:varchar(1)|
+pl_cont_duration:decimal(6,0)| pl_cont_dur_mode:varchar(1)|
+pl_freq_mode:varchar(1)| pl_freq_basis:varchar(1)|
+pl_min_acct_value:decimal(38,16)| pl_max_acct_value:decimal(38,16)| pl_ei_message:varchar(254)|
+pl_cvg_reduce_by:decimal(6,0)| pl_cvg_commish_calc:decimal(6,0)|
+pl_cvg_surrender_chg:decimal(6,0)| pl_cvg_alloc_order:decimal(6,0)|
+pl_cvg_alloc_basis:decimal(6,0)| pl_cvg_risk_class:decimal(6,0)|
+pl_cvg_coi_charge:decimal(6,0)| pl_cvg_adm_charge:decimal(6,0)|
+pl_cvg_ch1_charge:decimal(6,0)| pl_cvg_ch2_charge:decimal(6,0)|
+pl_rpt_perds:decimal(6,0)| pl_stream_type:decimal(6,0)|
+pl_lead_time:decimal(6,0)| pl_pln_prefix:varchar(3)|
+pl_cont_seq_ind:decimal(6,0)| pl_app_approval_ind:decimal(6,0)|
+pl_rsrv_prod_code:decimal(6,0)| pl_delay_perd:decimal(6,0)|
+pt_pln_type:decimal(6,0)| pt_base_pln_type:decimal(6,0)|
+pt_pln_desc:varchar(30)| pt_tstamp:date| pt_olife_pln_type:decimal(22,0)|
+qu_qual_code:decimal(6,0)| qu_qual_desc:varchar(30)| qu_qualified:decimal(6,0)|
+qu_conv_allowed:decimal(6,0)| qu_ira_type:decimal(6,0)|
+qu_w8_required:decimal(6,0)| qu_ytd_dollar:decimal(38,16)| qu_tstamp:date|
+qu_exclusion_rule:decimal(6,0)| sr_spec_code:decimal(6,0)|
+sr_spec_class:varchar(2)| sr_state_code:varchar(2)| sr_sex:varchar(1)|
+sr_pln_code:varchar(3)| sr_rule_1:decimal(6,0)| sr_rule_2:decimal(6,0)|
+sr_rule_3:decimal(6,0)| sr_rule_4:decimal(6,0)| sr_rule_5:decimal(6,0)|
+sr_rule_6:decimal(6,0)| sr_rule_7:decimal(6,0)| sr_rule_8:decimal(6,0)|
+sr_rule_9:decimal(6,0)| sr_rule_10:decimal(6,0)| sr_rule_11:decimal(6,0)|
+sr_rule_12:decimal(6,0)| sr_rule_13:decimal(6,0)| sr_rule_14:decimal(6,0)|
+sr_rule_15:decimal(6,0)| sr_tstamp:date| sr_rule_16:decimal(6,0)|
+sr_rule_17:decimal(6,0)| sr_rule_18:decimal(6,0)| sr_rule_19:decimal(6,0)|
+sr_rule_20:decimal(6,0)| sr_rule_21:decimal(6,0)| sr_rule_22:decimal(6,0)|
+sr_rule_23:decimal(6,0)| sr_rule_24:decimal(6,0)| sr_rule_25:decimal(6,0)|
+sr_rule_26:decimal(6,0)| sr_rule_27:decimal(6,0)| sr_rule_28:decimal(6,0)|
+sr_rule_29:decimal(6,0)| sr_rule_30:decimal(6,0)| sr_rule_31:decimal(6,0)|
+sr_rule_32:decimal(6,0)| sr_rule_33:decimal(6,0)| sr_rule_34:decimal(6,0)|
+sr_rule_35:decimal(6,0)| sr_rule_36:decimal(6,0)| sr_rule_37:decimal(6,0)|
+sr_rule_38:decimal(6,0)| sr_rule_39:decimal(6,0)| sr_rule_40:decimal(6,0)|
+priannuit_pr_name_id:decimal(22,0)| priannuit_pr_pol_num:decimal(22,0)|
+priannuit_pr_cvg_id:decimal(6,0)| priannuit_pr_role_id:decimal(6,0)|
+priannuit_pr_opt_id:decimal(6,0)| priannuit_pr_eff_date:date|
+priannuit_pr_address_id:decimal(22,0)| priannuit_pr_phone_id:decimal(22,0)|
+priannuit_pr_relationship_id:decimal(6,0)| priannuit_pr_end_date:date|
+priannuit_pr_percent_split:decimal(38,16)| priannuit_pr_tstamp:date|
+priannuit_pr_addr_seasonal:decimal(6,0)|
+priannuit_pr_first_user_id:decimal(22,0)| priannuit_pr_first_date:date|
+priannuit_pr_last_user_id:decimal(22,0)| priannuit_pr_last_date:date|
+priannuit_pr_disb_bill_id:decimal(22,0)|
+priannuit_pr_prem_bill_id:decimal(22,0)| priannuit_pr_dollar_split:decimal(38,16)|
+priannuit_pr_priority:decimal(6,0)| priannuit_pr_mailing_ind:decimal(6,0)|
+priannuit_pr_mailing_code:decimal(6,0)|
+priannuit_pr_mailing_amount:decimal(38,16)|
+priannuit_pr_mail_recur_ind:decimal(6,0)| priannuit_pr_mail_source_id:decimal(6,0)|
+priannuit_pr_account_num:varchar(30)|
+priannuit_pr_system_source_id:varchar(10)| priannuit_pr_fbo_desc:varchar(35)|
+priannuit_pr_fbo:decimal(6,0)| priannuit_pr_role_cnt:decimal(6,0)|
+priannuit_pr_role_link:decimal(6,0)| priannuit_pr_state_allow:decimal(6,0)|
+priannuit_pr_state_mar_status:decimal(6,0)|
+priannuit_pr_wthld_mar_status:decimal(6,0)|
+priannuit_pr_wthld_allow:decimal(6,0)| priannuit_pr_tax_role_id:decimal(6,0)|
+priannuit_pr_tax_opt_id:decimal(6,0)| priannuit_pr_tax_name_id:decimal(22,0)|
+priannuit_pr_rated_age:decimal(6,0)| priannuit_pr_extra_deaths:decimal(38,16)|
+priannuit_pr_hold_ind:decimal(6,0)| priannuit_pr_hold_date:date|
+priannuit_pr_bene_status:decimal(6,0)| priannuit_pr_comb_check:decimal(6,0)|
+priannuit_pr_deduction_id:decimal(22,0)| priannuit_ro_role_id:decimal(6,0)|
+priannuit_ro_opt_id:decimal(6,0)| priannuit_ro_opt_desc:varchar(30)|
+priannuit_ro_prty_code:decimal(6,0)| priannuit_ro_tstamp:date|
+priannuit_nm_name_id:decimal(22,0)| priannuit_nm_lst:varchar(40):pii |priannuit_nm_fst:varchar(15):pii
+|priannuit_nm_mid:varchar(15):pii | priannuit_nm_tax_id:varchar(9)|
+priannuit_nm_ext_id:varchar(15)| priannuit_nm_dob:date:pii
+|priannuit_nm_suffix:varchar(4)| priannuit_nm_name_type:varchar(2)|
+priannuit_nm_pin:varchar(10)| priannuit_nm_file:varchar(8)|
+priannuit_nm_verified:varchar(1)| priannuit_nm_email_id:varchar(48)|
+priannuit_nm_vlid_tax_id:varchar(1)| priannuit_nm_lst_upper:varchar(40)|
+priannuit_nm_soundex:varchar(4)| priannuit_nm_tstamp:date|
+priannuit_nm_first_user_id:decimal(22,0)| priannuit_nm_first_date:date|
+priannuit_nm_last_user_id:decimal(22,0)| priannuit_nm_last_date:date|
+priannuit_nm_ext_interface_id:decimal(22,0)|
+priannuit_nm_death_status:decimal(60):pii |
+priannuit_nm_system_source_id:varchar(10)| priannuit_ne_name_id:decimal(22,0)|
+priannuit_ne_birth_state_code:varchar(2)| priannuit_ne_salute:varchar(4)|
+priannuit_ne_status:decimal(6,0)| priannuit_ne_sex:varchar(1)|
+priannuit_ne_sal:decimal(38,16)| priannuit_ne_occ:varchar(30)|
+priannuit_ne_height:varchar(5)| priannuit_ne_weight:decimal(6,0)|
+priannuit_ne_birth_city:varchar(20)| priannuit_ne_death_date:date:pii
+|priannuit_ne_smoker:varchar(1)| priannuit_ne_employer:varchar(30)|
+priannuit_ne_tstamp:date| priannuit_ne_first_user_id:decimal(22,0)| priannuit_ne_first_date:date|
+priannuit_ne_last_user_id:decimal(22,0)| priannuit_ne_last_date:date|
+priannuit_ne_maid_name:varchar(40)| priannuit_ne_job_loc:varchar(20)|
+priannuit_ne_job_state:varchar(2)| priannuit_ne_intl_annuity:varchar(1)|
+priannuit_ne_w8_status:varchar(1)| priannuit_ne_w8_receiptdate:date|
+priannuit_aa_address_id:decimal(22,0)| priannuit_aa_name_id:decimal(22,0)|
+priannuit_aa_eff_strt_date:date| priannuit_aa_eff_end_date:date|
+priannuit_aa_tstamp:date| priannuit_ar_address_id:decimal(22,0)|
+priannuit_ar_address_type:varchar(2)| priannuit_ar_state_code:varchar(2)|
+priannuit_ar_ctry_code:varchar(5)| priannuit_ar_address1:varchar(35):pii
+|priannuit_ar_address2:varchar(35):pii |priannuit_ar_address3:varchar(35):pii
+|priannuit_ar_city:varchar(40)| priannuit_ar_zip_suffix:varchar(4)|
+priannuit_ar_zip_walk_route:varchar(3)| priannuit_ar_zip:varchar(5)|
+priannuit_ar_mail_zone:varchar(25)| priannuit_ar_tstamp:date|
+priannuit_ar_first_user_id:decimal(22,0)| priannuit_ar_first_date:date|
+priannuit_ar_last_user_id:decimal(22,0)| priannuit_ar_last_date:date|
+priannuit_ar_ext_interface_id:decimal(22,0)|
+priannuit_ar_system_source_id:varchar(10)| jointann_pr_name_id:decimal(22,0)|
+jointann_pr_pol_num:decimal(22,0)| jointann_pr_cvg_id:decimal(6,0)| jointann_pr_role_id:decimal(6,0)|
+jointann_pr_opt_id:decimal(6,0)| jointann_pr_eff_date:date|
+jointann_pr_address_id:decimal(22,0)| jointann_pr_phone_id:decimal(22,0)|
+jointann_pr_relationship_id:decimal(6,0)| jointann_pr_end_date:date|
+jointann_pr_percent_split:decimal(38,16)| jointann_pr_tstamp:date|
+jointann_pr_addr_seasonal:decimal(6,0)|
+jointann_pr_first_user_id:decimal(22,0)| jointann_pr_first_date:date|
+jointann_pr_last_user_id:decimal(22,0)| jointann_pr_last_date:date|
+jointann_pr_disb_bill_id:decimal(22,0)| jointann_pr_prem_bill_id:decimal(22,0)|
+jointann_pr_dollar_split:decimal(38,16)| jointann_pr_priority:decimal(6,0)|
+jointann_pr_mailing_ind:decimal(6,0)| jointann_pr_mailing_code:decimal(6,0)|
+jointann_pr_mailing_amount:decimal(38,16)| jointann_pr_mail_recur_ind:decimal(6,0)|
+jointann_pr_mail_source_id:decimal(6,0)| jointann_pr_account_num:varchar(30)|
+jointann_pr_system_source_id:varchar(10)| jointann_pr_fbo_desc:varchar(35)|
+jointann_pr_fbo:decimal(6,0)| jointann_pr_role_cnt:decimal(6,0)| jointann_pr_role_link:decimal(6,0)|
+jointann_pr_state_allow:decimal(6,0)|
+jointann_pr_state_mar_status:decimal(6,0)|
+jointann_pr_wthld_mar_status:decimal(6,0)|
+jointann_pr_wthld_allow:decimal(6,0)| jointann_pr_tax_role_id:decimal(6,0)|
+jointann_pr_tax_opt_id:decimal(6,0)| jointann_pr_tax_name_id:decimal(22,0)|
+jointann_pr_rated_age:decimal(6,0)| jointann_pr_extra_deaths:decimal(38,16)|
+jointann_pr_hold_ind:decimal(6,0)| jointann_pr_hold_date:date|
+jointann_pr_bene_status:decimal(6,0)| jointann_pr_comb_check:decimal(6,0)|
+jointann_pr_deduction_id:decimal(22,0)| jointann_ro_role_id:decimal(6,0)|
+jointann_ro_opt_id:decimal(6,0)| jointann_ro_opt_desc:varchar(30)|
+jointann_ro_prty_code:decimal(6,0)| jointann_ro_tstamp:date|
+jointann_nm_name_id:decimal(22,0)|jointann_nm_lst:varchar(40):pii |
+jointann_nm_fst:varchar(15):pii |jointann_nm_mid:varchar(15):pii
+|jointann_nm_tax_id:varchar(9)| jointann_nm_ext_id:varchar(15)|
+jointann_nm_dob:date:pii | jointann_nm_suffix:varchar(4)|
+jointann_nm_name_type:varchar(2)| jointann_nm_pin:varchar(10)|
+jointann_nm_file:varchar(8)| jointann_nm_verified:varchar(1)|
+jointann_nm_email_id:varchar(48)| jointann_nm_vlid_tax_id:varchar(1)|
+jointann_nm_lst_upper:varchar(40)| jointann_nm_soundex:varchar(4)|
+jointann_nm_tstamp:date| jointann_nm_first_user_id:decimal(22,0)|
+jointann_nm_first_date:date| jointann_nm_last_user_id:decimal(22,0)|
+jointann_nm_last_date:date| jointann_nm_ext_interface_id:decimal(22,0)|
+jointann_nm_death_status:decimal(60):pii |jointann_nmsystem_source_id:varchar(10)|
+jointann_ne_name_id:decimal(22,0)| jointann_birth_state_code:varchar(2)|
+jointann_ne_salute:varchar(4)| jointann_ne_status:decimal(6,0)|
+jointann_ne_sex:varchar(1)| jointann_ne_sal:decimal(38,16)|
+jointann_ne_occ:varchar(30)| jointann_ne_height:varchar(5)|
+jointann_ne_weight:decimal(6,0)| jointann_ne_birth_city:varchar(20)|
+jointann_ne_death_date:date:pii |jointann_ne_smoker:varchar(1)|
+jointann_ne_employer:varchar(30)| jointann_ne_tstamp:date|
+jointann_ne_first_user_id:decimal(22,0)| jointann_ne_first_date:date|
+jointann_ne_last_user_id:decimal(22,0)| jointann_ne_last_date:date|
+jointann_ne_maid_name:varchar(40)| jointann_ne_job_loc:varchar(20)|
+jointann_ne_job_state:varchar(2)| jointann_ne_intl_annuity:varchar(1)|
+jointann_ne_w8_status:varchar(1)| jointann_ne_w8_receiptdate:date|
+jointann_aa_address_id:decimal(22,0)| jointann_aa_name_id:decimal(22,0)|
+jointann_aa_eff_strt_date:date| jointann_aa_eff_end_date:date|
+jointann_aa_tstamp:date| jointann_ar_address_id:decimal(22,0)| jointann_ar_address_type:varchar(2)|
+jointann_ar_state_code:varchar(2)| jointann_ar_ctry_code:varchar(5)|
+jointann_ar_address1:varchar(35):pii |jointann_ar_address2:varchar(35):pii
+|jointann_ar_address3:varchar(35):pii |jointann_ar_city:varchar(40)|
+jointann_ar_zip_suffix:varchar(4)| jointann_ar_zip_walk_route:varchar(3)|
+jointann_ar_zip:varchar(5)| jointann_ar_mail_zone:varchar(25)|
+jointann_ar_tstamp:date| jointann_ar_first_user_id:decimal(22,0)|
+jointann_ar_first_date:date| jointann_ar_last_user_id:decimal(22,0)|
+jointann_ar_last_date:date| jointann_ar_ext_interface_id:decimal(22,0)|
+jointann_ar_system_source_id:varchar(10)| assignee_pr_name_id:decimal(22,0)|
+assignee_pr_pol_num:decimal(22,0)| assignee_pr_cvg_id:decimal(6,0)|
+assignee_pr_role_id:decimal(6,0)| assignee_pr_opt_id:decimal(6,0)|
+assignee_pr_eff_date:date| assignee_pr_address_id:decimal(22,0)|
+assignee_pr_phone_id:decimal(22,0)| assignee_pr_relationship_id:decimal(6,0)|
+assignee_pr_end_date:date| assignee_pr_percent_split:decimal(38,16)| assignee_pr_tstamp:date|
+assignee_pr_addr_seasonal:decimal(6,0)|
+assignee_pr_first_user_id:decimal(22,0)| assignee_pr_first_date:date|
+assignee_pr_last_user_id:decimal(22,0)| assignee_pr_last_date:date|
+assignee_pr_disb_bill_id:decimal(22,0)| assignee_pr_prem_bill_id:decimal(22,0)|
+assignee_pr_dollar_split:decimal(38,16)| assignee_pr_priority:decimal(6,0)|
+assignee_pr_mailing_ind:decimal(6,0)| assignee_pr_mailing_code:decimal(6,0)|
+assignee_pr_mailing_amount:decimal(38,16)|
+assignee_pr_mail_recur_ind:decimal(6,0)|
+assignee_pr_mail_source_id:decimal(6,0)| assignee_pr_account_num:varchar(30)|
+assignee_pr_system_source_id:varchar(10)| assignee_pr_fbo_desc:varchar(35)|
+assignee_pr_fbo:decimal(6,0)| assignee_pr_role_cnt:decimal(6,0)|
+assignee_pr_role_link:decimal(6,0)| assignee_pr_state_allow:decimal(6,0)|
+assignee_pr_state_mar_status:decimal(6,0)|
+assignee_pr_wthld_mar_status:decimal(6,0)|
+assignee_pr_wthld_allow:decimal(6,0)| assignee_pr_tax_role_id:decimal(6,0)|
+assignee_pr_tax_opt_id:decimal(6,0)| assignee_pr_tax_name_id:decimal(22,0)|
+assignee_pr_rated_age:decimal(6,0)| assignee_pr_extra_deaths:decimal(38,16)|
+assignee_pr_hold_ind:decimal(6,0)| assignee_pr_hold_date:date|
+assignee_pr_bene_status:decimal(6,0)| assignee_pr_comb_check:decimal(6,0)|
+assignee_pr_deduction_id:decimal(22,0)| assignee_ro_role_id:decimal(6,0)|
+assignee_ro_opt_id:decimal(6,0)| assignee_ro_opt_desc:varchar(30)|
+assignee_ro_prty_code:decimal(6,0)| assignee_ro_tstamp:date|
+assignee_nm_name_id:decimal(22,0)| assignee_nm_lst:varchar(40):pii
+|assignee_nm_fst:varchar(15):pii |assignee_nm_mid:varchar(15):pii |
+assignee_nm_tax_id:varchar(9)| assignee_nm_ext_id:varchar(15)|
+assignee_nm_dob:date:pii |assignee_nm_suffix:varchar(4)|
+assignee_nm_name_type:varchar(2)| assignee_nm_pin:varchar(10)| assignee_nm_file:varchar(8)|
+assignee_nm_verified:varchar(1)| assignee_nm_email_id:varchar(48)|
+assignee_nm_vlid_tax_id:varchar(1)| assignee_nm_lst_upper:varchar(40)|
+assignee_nm_soundex:varchar(4)| assignee_nm_tstamp:date|
+assignee_nm_first_user_id:decimal(22,0)| assignee_nm_first_date:date|
+assignee_nm_last_user_id:decimal(22,0)| assignee_nm_last_date:date|
+assignee_nm_ext_interface_id:decimal(22,0)|
+assignee_nm_death_status:decimal(60):pii |
+assignee_nm_system_source_id:varchar(10)| assignee_rl_role_id:decimal(6,0)|
+assignee_rl_role_desc:varchar(30)| assignee_rl_tstamp:date|
+owner_pr_name_id:decimal(22,0)| owner_pr_pol_num:decimal(22,0)|
+owner_pr_cvg_id:decimal(6,0)| owner_pr_role_id:decimal(6,0)|
+owner_pr_opt_id:decimal(6,0)| owner_pr_eff_date:date| owner_pr_address_id:decimal(22,0)|
+owner_pr_phone_id:decimal(22,0)| owner_pr_relationship_id:decimal(6,0)|
+owner_pr_end_date:date| owner_pr_percent_split:decimal(38,16)|
+owner_pr_tstamp:date| owner_pr_addr_seasonal:decimal(6,0)|
+owner_pr_first_user_id:decimal(22,0)| owner_pr_first_date:date|
+owner_pr_last_user_id:decimal(22,0)| owner_pr_last_date:date|
+owner_pr_disb_bill_id:decimal(22,0)| owner_pr_prem_bill_id:decimal(22,0)|
+owner_pr_dollar_split:decimal(38,16)| owner_pr_priority:decimal(6,0)| owner_pr_mailing_ind:decimal(6,0)|
+owner_pr_mailing_code:decimal(6,0)| owner_pr_mailing_amount:decimal(38,16)|
+owner_pr_mail_recur_ind:decimal(6,0)| owner_pr_mail_source_id:decimal(6,0)|
+owner_pr_account_num:varchar(30)| owner_pr_system_source_id:varchar(10)| owner_pr_fbo_desc:varchar(35)|
+owner_pr_fbo:decimal(6,0)| owner_pr_role_cnt:decimal(6,0)|
+owner_pr_role_link:decimal(6,0)| owner_pr_state_allow:decimal(6,0)|
+owner_pr_state_mar_status:decimal(6,0)| owner_pr_wthld_mar_status:decimal(6,0)|
+owner_pr_wthld_allow:decimal(6,0)| owner_pr_tax_role_id:decimal(6,0)|
+owner_pr_tax_opt_id:decimal(6,0)| owner_pr_tax_name_id:decimal(22,0)|
+owner_pr_rated_age:decimal(6,0)| owner_pr_extra_deaths:decimal(38,16)|
+owner_pr_hold_ind:decimal(6,0)| owner_pr_hold_date:date| owner_pr_bene_status:decimal(6,0)|
+owner_pr_comb_check:decimal(6,0)| owner_pr_deduction_id:decimal(22,0)|
+owner_ro_role_id:decimal(6,0)| owner_ro_opt_id:decimal(6,0)|
+owner_ro_opt_desc:varchar(30)| owner_ro_prty_code:decimal(6,0)|
+owner_ro_tstamp:date| owner_nm_name_id:decimal(22,0)|
+owner_nm_lst:varchar(40):pii |owner_nm_fst:varchar(15):pii
+|owner_nm_mid:varchar(15):pii |owner_nm_tax_id:varchar(9)|
+owner_nm_ext_id:varchar(15)| owner_nm_dob:date:pii |owner_nm_suffix:varchar(4)|
+owner_nm_name_type:varchar(2)| owner_nm_pin:varchar(10)|
+owner_nm_file:varchar(8)| owner_nm_verified:varchar(1)|
+owner_nm_email_id:varchar(48)| owner_nm_vlid_tax_id:varchar(1)|
+owner_nm_lst_upper:varchar(40)| owner_nm_soundex:varchar(4)|
+owner_nm_tstamp:date| owner_nm_first_user_id:decimal(22,0)|
+owner_nm_first_date:date| owner_nm_last_user_id:decimal(22,0)|
+owner_nm_last_date:date| owner_nm_ext_interface_id:decimal(22,0)|
+owner_nm_death_status:decimal(60):pii |owner_nm_system_source_id:varchar(10)|
+owner_rl_role_id:decimal(6,0)| owner_rl_role_desc:varchar(30)|
+owner_rl_tstamp:date| payee_pr_name_id:decimal(22,0)|
+payee_pr_pol_num:decimal(22,0)| payee_pr_cvg_id:decimal(6,0)|
+payee_pr_role_id:decimal(6,0)| payee_pr_opt_id:decimal(6,0)|
+payee_pr_eff_date:date| payee_pr_address_id:decimal(22,0)|
+payee_pr_phone_id:decimal(22,0)| payee_pr_relationship_id:decimal(6,0)|
+payee_pr_end_date:date| payee_pr_percent_split:decimal(38,16)|
+payee_pr_tstamp:date| payee_pr_addr_seasonal:decimal(6,0)|
+payee_pr_first_user_id:decimal(22,0)| payee_pr_first_date:date|
+payee_pr_last_user_id:decimal(22,0)| payee_pr_last_date:date|
+payee_pr_disb_bill_id:decimal(22,0)| payee_pr_prem_bill_id:decimal(22,0)|
+payee_pr_dollar_split:decimal(38,16)| payee_pr_priority:decimal(6,0)|
+payee_pr_mailing_ind:decimal(6,0)| payee_pr_mailing_code:decimal(6,0)|
+payee_pr_mailing_amount:decimal(38,16)| payee_pr_mail_recur_ind:decimal(6,0)|
+payee_pr_mail_source_id:decimal(6,0)| payee_pr_account_num:varchar(30)|
+payee_pr_system_source_id:varchar(10)| payee_pr_fbo_desc:varchar(35)|
+payee_pr_fbo:decimal(6,0)| payee_pr_role_cnt:decimal(6,0)|
+payee_pr_role_link:decimal(6,0)| payee_pr_state_allow:decimal(6,0)|
+payee_pr_state_mar_status:decimal(6,0)| payee_pr_wthld_mar_status:decimal(6,0)|
+payee_pr_wthld_allow:decimal(6,0)| payee_pr_tax_role_id:decimal(6,0)|
+payee_pr_tax_opt_id:decimal(6,0)| payee_pr_tax_name_id:decimal(22,0)|
+payee_pr_rated_age:decimal(6,0)| payee_pr_extra_deaths:decimal(38,16)|
+payee_pr_hold_ind:decimal(6,0)| payee_pr_hold_date:date|
+payee_pr_bene_status:decimal(6,0)| payee_pr_comb_check:decimal(6,0)|
+payee_pr_deduction_id:decimal(22,0)| payee_ro_role_id:decimal(6,0)|
+payee_ro_opt_id:decimal(6,0)| payee_ro_opt_desc:varchar(30)|
+payee_ro_prty_code:decimal(6,0)| payee_ro_tstamp:date|
+payee_nm_name_id:decimal(22,0)| payee_nm_lst:varchar(40):pii
+|payee_nm_fst:varchar(15):pii |payee_nm_mid:varchar(15):pii
+|payee_nm_tax_id:varchar(9)| payee_nm_ext_id:varchar(15)| payee_nm_dob:date:pii
+|payee_nm_suffix:varchar(4)| payee_nm_name_type:varchar(2)|
+payee_nm_pin:varchar(10)| payee_nm_file:varchar(8)|
+payee_nm_verified:varchar(1)| payee_nm_email_id:varchar(48)|
+payee_nm_vlid_tax_id:varchar(1)| payee_nm_lst_upper:varchar(40)|
+payee_nm_soundex:varchar(4)| payee_nm_tstamp:date|
+payee_nm_first_user_id:decimal(22,0)| payee_nm_first_date:date|
+payee_nm_last_user_id:decimal(22,0)| payee_nm_last_date:date|
+payee_nm_ext_interface_id:decimal(22,0)| payee_nm_death_status:decimal(60):pii
+|payee_nm_system_source_id:varchar(10)| payee_rl_role_id:decimal(6,0)|
+payee_rl_role_desc:varchar(30)| payee_rl_tstamp:date
+
+
+",navisys,NA,",",.CSV,TRUE,data,monthly,po_issue_date:mm/dd/yyyy,fortitude-non-prod-life-it-us-east-1/data-lake/lz/aig/cbsc/navisys/navisys_policy.csv,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}", ,FALSE,policy,
+NAVITXN,"policy_num:decimal(6,0)|transaction_num:decimal(22,0)|tl_txn_num:decimal(22,0)|tl_charge:decimal(38,16)|tl_prt_yn:decimal(6,0)|tl_prcs_date:date|tl_undo_date:date|tl_gain_amt:decimal(38,16)|tl_count_trtype:decimal(6,0)|tl_comm_amt:decimal(38,16)|tl_retained_comm_flg:decimal(6,0)|tl_net_flg:string|tl_itm_num:string|tl_ira_year:string|tl_eft_flg:decimal(6,0)|tl_net_cv:decimal(38,16)|tl_insureds:decimal(38,16)|tl_free_wthld_amt:decimal(38,16)|tl_tabular_ncv_amt:decimal(38,16)|tl_loan_value_amt:decimal(38,16)|tl_tabular_value_amt:decimal(38,16)|tl_gen_value_amt:decimal(38,16)|tl_tabular_nar_amt:decimal(38,16)|tl_mec_status:decimal(6,0)|tl_nar_amt:decimal(38,16)|tl_rsrv_amt:decimal(38,16)|tl_statutory_rsrv_amt:decimal(38,16)|tl_rsrv_clms_amt:decimal(38,16)|tl_clms_amt:decimal(38,16)|tl_interest_amt:decimal(38,16)|tl_credible_amt:decimal(38,16)|tl_rem_prem_amt:decimal(38,16)|tl_tabular_death_benefit_amt:decimal(38,16)|tl_death_benefit_amt:decimal(38,16)|tl_via_amt:decimal(38,16)|tl_prem_year1:decimal(38,16)|tl_perd:decimal(6,0)|tl_year:decimal(6,0)|tl_age:decimal(6,0)|tl_listbill_group:string|tl_waive_yn:decimal(6,0)|tl_waive_lmts_yn:decimal(6,0)|tl_waive_prem_yn:decimal(6,0)|tl_dist_by:decimal(6,0)|tl_group_txn_yn:decimal(6,0)|tl_listbill_date:date|tl_sys_date:date|tl_loan_int:decimal(38,16)|tl_fxd_acc_eff_amt:decimal(38,16)|tl_var_irs_payout_basis:decimal(38,16)|tl_fxd_irs_payout_basis:decimal(38,16)|tl_tstamp:date|tl_source_id:decimal(6,0)|tl_memo_code:string|tl_lst_pol_status:string|tl_cum_foregone:decimal(38,16)|tl_cum_above:decimal(38,16)|tl_cum_mult:decimal(38,16)|tl_first_user_id:decimal(22,0)|tl_first_date:date|tl_last_user_id:decimal(22,0)|tl_last_date:date|tl_cvg_year:decimal(6,0)|tl_cvg_month:decimal(6,0)|tl_tax_exempt:decimal(6,0)|tl_pol_num:decimal(6,0)|tl_cvg_id:decimal(6,0)|tl_txn_type:decimal(6,0)|tl_amt_type:decimal(6,0)|tl_txn_status:string|tl_disb_num:decimal(22,0)|tl_txn_date:date|tl_amt:decimal(38,16)|tl_refund:decimal(38,16)|tl_total:decimal(38,16)|tl_inv_value_amt:decimal(38,16)|tl_err_code:decimal(6,0)|tl_gl_num:decimal(22,0)|tl_btch_num:decimal(22,0)|tl_old_txn_num:decimal(22,0)|tl_cum_face_amt:decimal(38,16)|tl_cum_min_prem_amt:decimal(38,16)|tl_cum_txn_amt:decimal(38,16)|tl_ytd_wthld:decimal(38,16)|tl_ytd_sys_wthld:decimal(38,16)|tl_eoy_inv_amt:decimal(38,16)|tl_eoy_ncv_amt:decimal(38,16)|tl_eoy_death_benefit_amt:decimal(38,16)|tl_cum_tamra_amt:decimal(38,16)|tl_cum_glp_amt:decimal(38,16)|tl_cum_tgt_prem_paid_amt:decimal(38,16)|tl_ytd_free_amt:decimal(38,16)|tl_ytd_prem_amt:decimal(38,16)|tl_cum_wthld_amt:decimal(38,16)|tl_cum_prem_amt:decimal(38,16)|tl_ytd_fxd_trnf_in:decimal(38,16)|tl_ytd_fxd_trnf_out:decimal(38,16)|tl_ytd_fxd_prem_amt:decimal(38,16)|tl_ytd_fxd_wdrwl_amt:decimal(38,16)|tl_acrd_fxd_int_amt:decimal(38,16)|tl_cum_net_wthdl:decimal(38,16)|tl_ytd_var_excl_amt:decimal(38,16)|tl_cum_tgt_amt:decimal(38,16)|tl_user_id:decimal(22,0)|tl_waive_mva_yn:decimal(6,0)|tl_waive_reason:decimal(6,0)|tl_cum_nt_surr_charges:decimal(38,16)|tl_cum_nt_mva_charges:decimal(38,16)|tl_undo_cyc_id:decimal(22,0)|tl_prcs_cyc_id:decimal(22,0)|tl_rop_yn:decimal(6,0)|tl_cum_tamra_basis_amt:decimal(38,16)|tl_tamra_min_db:decimal(38,16)|tl_tamra_year:decimal(6,0)|tl_tamra_period:decimal(6,0)|tl_lstprcs_date:date|tl_waive_face_chg:decimal(6,0)|tl_allocation_id:decimal(22,0)|tl_susp_num:decimal(22,0)|tl_suppress_commission:decimal(6,0)|tl_suppress_tax_rpt:decimal(6,0)|tl_suppress_check:decimal(6,0)|tl_ratchet_amt:decimal(38,16)|tl_ratchet_floor_amt:decimal(38,16)|tl_ytd_unused_excl_amt:decimal(38,16)|tl_cum_unused_excl_amt:decimal(38,16)|tl_nxt_pol_status:string|tl_system_source_id:string|tl_approval_id:decimal(22,0)|tl_fst_txn_type:decimal(6,0)|tl_di_status:string|tl_last_premhist_txn:decimal(22,0)|tl_ytd_liq_free_with:decimal(38,16)|tl_fixed_comm_val:decimal(38,16)|tl_variable_comm_val:decimal(38,16)|tl_surrender_val:decimal(38,16)|tl_death_benefit_val:decimal(38,16)|tl_stop_pay_ind:decimal(6,0)|tl_prim_joint_death:decimal(6,0)|tl_disb_stop_ind:decimal(6,0)|tl_wfc_flag:decimal(6,0)|tl_nonreversible_flg:decimal(6,0)|tl_due_date:date|tl_retained_comm_amt:decimal(38,16)|tl_uvc_ind:decimal(6,0)|tl_suppress_confirm:decimal(6,0)|tl_cum_surv_d_and_u:decimal(38,16)|do_disb_type:string|do_disb_type_desc:string|sv_pol_num:decimal(22,0)|sv_cvg_id:decimal(6,0)|sv_stream_id:decimal(6,0)|sv_txn_num:decimal(22,0)|sv_value_date:date|sv_txn_type:string|sv_nxt_stream_status:decimal(6,0)|sv_ann_pay_option:string|sv_air:decimal(38,16)|sv_fixed_int_rate:decimal(38,16)|sv_fxd_payout_amt:decimal(38,16)|sv_fxd_exld_amt:decimal(38,16)|sv_var_payout_amt:decimal(38,16)|sv_var_exld_amt:decimal(38,16)|sv_fxd_last_payout_amt:decimal(38,16)|sv_var_last_payout_amt:decimal(38,16)|sv_use_life_expect:decimal(6,0)|sv_tstamp:date|sv_floor_amt:decimal(38,16)|sv_floor_applied_amt:decimal(38,16)|sv_level_payment_amt:decimal(38,16)|sv_ytd_stream_transfers:decimal(6,0)|sv_benefit_reduction_ind:decimal(6,0)|sv_transfer_charge:decimal(38,16)|sv_level_wthdl:decimal(38,16)|sv_lst_stream_status:decimal(6,0)|sv_benefit_type:decimal(6,0)|sv_cp_end_date:date|sv_life_start_date:date|sv_fst_pay_date:date|sv_level_ind:decimal(6,0)|sv_lst_pay_date:date|sv_cum_fxd_disb:decimal(38,16)|sv_cum_var_disb:decimal(38,16)|sv_level_payment_num:decimal(6,0)|sv_death_cont_pend:decimal(6,0)|sv_level_disb_amt:decimal(38,16)|sv_rem_num_pmts:decimal(38,16)|sv_death_proc_status:decimal(6,0)|sv_type_inc:string|sv_dollar_inc:decimal(38,16)|sv_percent_inc:decimal(38,16)|sv_pa_ctr:decimal(6,0)|sv_fixed_stream_val:decimal(38,16)|sv_unpaid_accrued:decimal(38,16)|sv_due_date:date|sv_level_mode:string|sv_last_level_proc_date:date|sv_cola_ind:decimal(6,0)|sv_cola_benefit_amt:decimal(38,16)|sv_fixed_per:decimal(38,16)|sv_cp_var_end_date:date|sv_cp_var_pmts:decimal(6,0)|sv_fix_payout_reduction:decimal(38,16)|sv_var_payout_reduction:decimal(38,16)|pv_value_date:date|pv_pol_num:decimal(22,0)|pv_cvg_id:decimal(6,0)|pv_tgt_amt:decimal(38,16)|pv_prem:decimal(38,16)|pv_vanish:decimal(6,0)|pv_term:decimal(6,0)|pv_deductions:decimal(38,16)|pv_face_amt:decimal(38,16)|pv_cum_cvg_face:decimal(38,16)|pv_gnty_perd:decimal(38,16)|pv_nsp:decimal(38,16)|pv_use_eft:string|pv_gsp:decimal(38,16)|pv_glp:decimal(38,16)|pv_gmp:decimal(38,16)|pv_nlp_statutory:decimal(38,16)|pv_nlp_tax:decimal(38,16)|pv_tamra_amt:decimal(38,16)|pv_mdbg_perd:decimal(38,16)|pv_mis_code1:string|pv_mis_code2:string|pv_pay_years:decimal(6,0)|pv_min_prem:decimal(38,16)|pv_mode_prem:decimal(38,16)|pv_pay_mode:string|pv_pay_opt:string|pv_death_benefit_opt:string|pv_rate_code:string|pv_flat_extra:decimal(38,16)|pv_coi_factor:decimal(38,16)|pv_rate_year:decimal(6,0)|pv_payroll_ded_type:string|pv_cvg_gi_diff_amt:decimal(38,16)|pv_cvg_amt:decimal(38,16)|pv_exs_term_prem_amt:decimal(38,16)|pv_sal_mult:decimal(38,16)|pv_tstamp:date|pv_wthld_mar_status:decimal(6,0)|pv_wthld_allow:decimal(6,0)|pv_bill_code:decimal(6,0)|pv_class_prim:string|pv_class_joint:string|pv_gen_pol_switch:decimal(6,0)|pv_first_user_id:decimal(22,0)|pv_first_date:date|pv_last_user_id:decimal(22,0)|pv_last_date:date|pv_salary:decimal(38,16)|pv_sec:decimal(38,16)|pv_cvg_issue_age:decimal(6,0)|pv_txn_num:decimal(22,0)|pv_life_nsp:decimal(38,16)|pv_ann_nsp:decimal(38,16)|pv_polchg_av:decimal(38,16)|pv_tamra_db:decimal(38,16)|pv_qab_factor:decimal(38,16)|pv_state_allow:decimal(6,0)|pv_state_mar_status:decimal(6,0)|pv_use_fxd_guar_payout:decimal(6,0)|pv_cont_type:string|pv_txn_type:string|pv_pay_date:date|pv_pay_day:decimal(6,0)|pv_death_proc_status:decimal(6,0)|pv_death_cont_pend:decimal(6,0)|pv_death_claim_amt:decimal(38,16)|pv_death_surr_amt:decimal(38,16)|pv_death_benefit_basis_benef:decimal(38,16)|pv_death_benefit_basis_estate:decimal(38,16)|pv_rop_offset:decimal(38,16)|pv_due_unpaid_amt:decimal(38,16)|pv_undue_unpaid_amt:decimal(38,16)|pv_due_unpaid_basis:decimal(38,16)|pv_cola_option:string",navisys, ,",",.CSV,TRUE,data,monthly, ,fortitude-non-prod-life-it-us-east-1/data-lake/lz/aig/cbsc/navisys/navisys_txn.csv,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}", ,FALSE,policy,
+alobwrk_extr,key_date:date| key_time:time| key_milsec:bigint| recordcd:char(1)| crnode:int| event_dattim:datetime| unitcd:varchar(20)| amtt_00:int| amtv_000:varchar(20)| poln_000:varchar(10)| clno_001:int | lnam_001:varchar(20)| fnam_001:varchar(20)| cocd_001:varchar(50) ,awd/alobwrk, ,~,.txt,FALSE,data,monthly,key_date,s3://fortitude-non-prod-life-it-data-us-east-1/raw/aig/cbsc/awd/alobwrk/alobwrk_extr_20200605_043211.txt,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}", ,FALSE,policy,
+wb0_extr,key_date:date| key_time:time| key_milsec:bigint| recordcd:char(2)| crnode:int| event_dattim:datetime| suspcd: varchar(15)| actdattim:datetime| actstat:varchar(15),awd/wb0, ,~,.txt,FALSE,data,monthly,key_date,s3://fortitude-non-prod-life-it-data-us-east-1/raw/aig/cbsc/awd/wb0/wb0_extr_20200605_043211.txt,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}", ,FALSE,policy,
+wc4_extr,key_date:date| key_time:time| key_milsec:bigint| recordcd:char(2)| crnode:int| event_dattim:datetime| ws_date:date| ws_time:time| event_code:varchar(15)| clientcd:char(2)| unitcd:char(2)| categorycd:char(2)| wrktype:varchar(15)| statcd:char(15)| queuecd:varchar(15)| prty:varchar(15)| increase:varchar(15)| viflag:varchar(15)| suspflag:varchar(15)| userid:varchar(15)| groupcd:varchar(15)| middleinit:varchar(15)| lastname:varchar(15)| firstname:varchar(15)| prv_event_dattim:datetime| prv_clientcd:varchar(15)| prv_unitcd:varchar(15)| prv_categorycd:varchar(15)| prv_wrktype:varchar(15)| prv_statcd:varchar(15)| prv_queuecd:varchar(15)| prv_prty:varchar(15)| prv_increase:varchar(15)| prv_viflag:varchar(15)| prv_suspflag:varchar(15),awd/wc4, ,~,.txt,FALSE,data,monthly,key_date,s3://fortitude-non-prod-life-it-data-us-east-1/raw/aig/cbsc/awd/wc4/wc4_extr_20200605_043211.txt,"{  ""block"" : { ""S"" : ""cbsc"" },  ""client"" : { ""S"" : ""aig"" }}", ,FALSE,policy,
